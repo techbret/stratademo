@@ -1,16 +1,17 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
+import { Disclosure } from '@headlessui/react'
+import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import { Link } from 'react-router-dom'
 import  IconLogo  from '../resources/logo.svg'
 
 
 const navigation = [
-  { name: 'Home', href: '/', current: true },
-  { name: 'Strata Tech', href: '/', current: false },
-  { name: 'About Us', href: '/about-us', current: false },
-  { name: 'Contact Us', href: '#', current: false },
+  { name: 'Home', url: '/', current: false },
+  { name: 'How It Works', url: '/', current: false },
+  { name: 'About Us', url: '/about-us', current: false },
+  { name: 'Contact Us', url: '/contact-us', current: false },
 ]
+
 
 function classNames(...classes: any) {
   return classes.filter(Boolean).join(' ')
@@ -18,7 +19,7 @@ function classNames(...classes: any) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-gray-800">
+    <Disclosure as="nav" className="bg-blue-800">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -36,26 +37,28 @@ export default function Navbar() {
               </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">
-                  <img
+                  <a href="/"><img
                     className="block lg:hidden h-8 w-auto"
                     src={IconLogo}
                     alt="Workflow"
-                  />
+                  /></a>
+                  <a href="/">
                   <img
                     className="hidden lg:block h-8 w-auto"
                     src={IconLogo}
                     alt="Workflow"
                   />
+                  </a>
                 </div>
                 <div className="hidden sm:block sm:ml-6">
-                  <div className="flex space-x-4">
+                  <div className="flex space-x-4">                    
                     {navigation.map((item) => (
                       <a
                         key={item.name}
-                        href={item.href}
+                        href={item.url}
                         className={classNames(
-                          item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                          'px-3 py-2 rounded-md text-sm font-medium'
+                          item.current ? 'bg-blue-900 text-white' : 'text-gray-300 hover:bg-blue-700 hover:text-white',
+                          'px-3 py-2 rounded-md text-sm font-semibold'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
@@ -68,7 +71,7 @@ export default function Navbar() {
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
               <button
                     type="button"
-                    className="relative inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-500 hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-indigo-500"
+                    className="relative inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-semibold rounded-md text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-indigo-500"
                   >
                     <span>Login</span>
                   </button>
@@ -84,7 +87,7 @@ export default function Navbar() {
                 <Disclosure.Button
                   key={item.name}
                   as="a"
-                  href={item.href}
+                  href={item.url}
                   className={classNames(
                     item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                     'block px-3 py-2 rounded-md text-base font-medium'

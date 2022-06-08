@@ -5,12 +5,13 @@ import {
   Routes,
   Navigate,
 } from 'react-router-dom';
-import logo from './logo.svg';
 import './App.css';
 
 import Home from './pages/Home';
-import Navbar from './components/Navbar';
 import About from './pages/About';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Contact from './pages/Contact';
 
 
 function App() {
@@ -18,13 +19,14 @@ function App() {
     <div>
       <Navbar />
       <Router>
-
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/*" element={<Navigate to={"/"} />} />
           <Route path="/about-us" element={<About />} />
+          <Route path="/contact-us" element={<Contact />} />
         </Routes>
       </Router>
+      <Footer />
     </div>
 
 
