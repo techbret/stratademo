@@ -1,6 +1,6 @@
 const people = [
     {
-      name: 'Jon Ashton',
+      name: ' Dr. Jon Ashton',
       role: 'Founder / CEO',
       imageUrl:
         'https://www.seekpng.com/png/detail/847-8474751_download-empty-profile.png',
@@ -37,8 +37,7 @@ const people = [
             <div className="space-y-5 sm:space-y-4">
               <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">About Us</h2>
               <p className="text-xl text-gray-500">
-                Nulla quam felis, enim faucibus proin velit, ornare id pretium. Augue ultrices sed arcu condimentum
-                vestibulum suspendisse. Volutpat eu faucibus vivamus eget bibendum cras.
+              Strata Intel is an organizational health software company. It is responsible for a web application that conducts a dynamic emotional well-being assessment of a group based on individual user input. Group Well-Being Assessment (GWA)
               </p>
             </div>
             <div className="lg:col-span-2">

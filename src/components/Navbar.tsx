@@ -1,15 +1,16 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Disclosure } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
-import { Link } from 'react-router-dom'
 import  IconLogo  from '../resources/logo.svg'
+import Logo from '../resources/icon.svg'
 
 
 const navigation = [
   { name: 'Home', url: '/', current: false },
-  { name: 'How It Works', url: '/', current: false },
+  { name: 'How It Works', url: '/how-it-works', current: false },
   { name: 'About Us', url: '/about-us', current: false },
   { name: 'Contact Us', url: '/contact-us', current: false },
+  { name: 'Why Strata', url: '/why-strata-intel', current: false },
 ]
 
 
@@ -19,7 +20,7 @@ function classNames(...classes: any) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-blue-800">
+    <Disclosure as="nav" className="bg-blue-800 sticky top-0 z-50">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -39,7 +40,7 @@ export default function Navbar() {
                 <div className="flex-shrink-0 flex items-center">
                   <a href="/"><img
                     className="block lg:hidden h-8 w-auto"
-                    src={IconLogo}
+                    src={Logo}
                     alt="Workflow"
                   /></a>
                   <a href="/">
@@ -57,8 +58,8 @@ export default function Navbar() {
                         key={item.name}
                         href={item.url}
                         className={classNames(
-                          item.current ? 'bg-blue-900 text-white' : 'text-gray-300 hover:bg-blue-700 hover:text-white',
-                          'px-3 py-2 rounded-md text-sm font-semibold'
+                          item.current ? 'bg-blue-900 text-white' : 'text-white hover:bg-blue-700 hover:text-white',
+                          'px-3 py-2 rounded-md text-base font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
@@ -71,7 +72,7 @@ export default function Navbar() {
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
               <button
                     type="button"
-                    className="relative inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-semibold rounded-md text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-indigo-500"
+                    className="relative inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-indigo-500"
                   >
                     <span>Login</span>
                   </button>
