@@ -170,7 +170,7 @@ export default function Footer() {
               <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
                 <button
                   type="submit"
-                  className="w-full bg-indigo-500 border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-indigo-500"
+                  className="w-full bg-blue-500 border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-indigo-500"
                 >
                   Subscribe
                 </button>
@@ -181,7 +181,7 @@ export default function Footer() {
         <div className="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
           <div className="flex space-x-6 md:order-2">
             {navigation.social.map((item) => (
-              <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-300">
+              <a key={item.name} href={item.href} className="text-white hover:text-blue-500">
                 <span className="sr-only">{item.name}</span>
                 <div className="h-6 w-6" aria-hidden="true">
                 {item.icon}
@@ -189,8 +189,8 @@ export default function Footer() {
               </a>
             ))}
           </div>
-          <p className="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
-            &copy; 2020 Workflow, Inc. All rights reserved.
+          <p className="mt-8 text-base text-gray-50 md:mt-0 md:order-1">
+            &copy; 2022 Strata Intel LLC. All rights reserved.
           </p>
         </div>
       </div>

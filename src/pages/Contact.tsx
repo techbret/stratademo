@@ -108,8 +108,7 @@ export default function Contact() {
               </div>
               <h3 className="text-lg font-medium text-white">Contact information</h3>
               <p className="mt-6 text-base text-indigo-50 max-w-3xl">
-                Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor
-                lacus arcu.
+              Strata Intel's "Group Well-Being Assessment" (GWA) is a web application that conducts a dynamic emotional well-being assessment of a group based on individual user input.
               </p>
               <dl className="mt-8 space-y-6">
                 <dt>
