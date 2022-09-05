@@ -55,7 +55,7 @@ const people = [
                         <div className="space-y-4">
                           <div className="text-lg leading-6 font-semibold space-y-1">
                             <h3>{person.name}</h3>
-                            <p className="text-indigo-600">{person.role}</p>
+                            <p className="text-blue-600">{person.role}</p>
                           </div>
                           <div className="text-lg">
                             <p className="text-gray-500">{person.bio}</p>
