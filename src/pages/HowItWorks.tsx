@@ -76,7 +76,7 @@ export default function HowItWorks() {
         </svg>
 
         <div className="relative">
-        <h2 className="text-base text-center font-semibold text-indigo-600 tracking-wide uppercase">How It Works</h2>
+        <h2 className="text-base text-center font-semibold text-blue-600 tracking-wide uppercase">How It Works</h2>
           <h2 className="text-center text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
           Group Well-Being Assessment
           </h2>

@@ -56,13 +56,13 @@ export default function Home() {
                             id="email"
                             type="email"
                             placeholder="Enter your email"
-                            className="block w-full px-4 py-3 rounded-md border-0 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-300 focus:ring-offset-gray-900"
+                            className="block w-full px-4 py-3 rounded-md border-0 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-300 focus:ring-offset-gray-900"
                           />
                         </div>
                         <div className="mt-3 sm:mt-0 sm:ml-3">
                           <button
                             type="submit"
-                            className="block w-full py-3 px-4 rounded-md shadow bg-blue-500 text-white font-semibold hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-300 focus:ring-offset-gray-900"
+                            className="block w-full py-3 px-4 rounded-md shadow bg-blue-500 text-white font-semibold hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-300 focus:ring-offset-gray-900"
                           >
                             Request Consultation
                           </button>
@@ -119,12 +119,12 @@ export default function Home() {
           <span className="block">Boost your organization's overall well-being</span>
           <span className="block">Start using Strata Intel today.</span>
         </h2>
-        <p className="mt-4 text-lg leading-6 text-indigo-200">
+        <p className="mt-4 text-lg leading-6 text-blue-200">
         Strata Intel has created an easy to use and comprehensive assessment and access to a full array of high impact workplace mental health data points. With the workplace involved in addressing mental health, we have an incredible opportunity for positive change.
         </p>
         <a
           href="#"
-          className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-semibold rounded-md text-blue-900 bg-white hover:bg-indigo-50 sm:w-auto"
+          className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-semibold rounded-md text-blue-900 bg-white hover:bg-blue-50 sm:w-auto"
         >
           Try an Assesment Now
         </a>
@@ -149,15 +149,15 @@ export default function Home() {
               <dl className="rounded-lg bg-white shadow-lg sm:grid sm:grid-cols-3">
                 <div className="flex flex-col border-b border-gray-100 p-6 text-center sm:border-0 sm:border-r">
                   <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">Online</dt>
-                  <dd className="order-1 text-5xl font-extrabold text-indigo-600">100%</dd>
+                  <dd className="order-1 text-5xl font-extrabold text-blue-600">100%</dd>
                 </div>
                 <div className="flex flex-col border-t border-b border-gray-100 p-6 text-center sm:border-0 sm:border-l sm:border-r">
                   <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">Supprt</dt>
-                  <dd className="order-1 text-5xl font-extrabold text-indigo-600">24/7</dd>
+                  <dd className="order-1 text-5xl font-extrabold text-blue-600">24/7</dd>
                 </div>
                 <div className="flex flex-col border-t border-gray-100 p-6 text-center sm:border-0 sm:border-l">
                   <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">Data Points</dt>
-                  <dd className="order-1 text-5xl font-extrabold text-indigo-600">10k</dd>
+                  <dd className="order-1 text-5xl font-extrabold text-blue-600">10k</dd>
                 </div>
               </dl>
             </div>
